@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Temporary
+.tmp/
+tmp/
+*.tmp
+
+# Audio outputs
+output/
+generated/
+*.mp3
+*.wav
+*.flac
+*.ogg
+
+# Model cache
+.cache/
+huggingface/
+models/
+
+# TypeScript
+*.tsbuildinfo
+
+dist/
