@@ -59,11 +59,26 @@ See [MODELS.md](docs/MODELS.md) for detailed comparison.
 ### Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ttag-text-to-audio.git
+git clone  
 cd ttag-text-to-audio
 npm install
 pip install -r requirements.txt
 ```
+
+### CPU-only Python install (recommended for non-GPU machines)
+
+If you don't have a matching CUDA driver or you want to avoid large CUDA wheel downloads, create a virtualenv and install CPU-only wheels:
+
+```bash
+# create and activate a venv
+python -m venv .venv
+source .venv/bin/activate
+
+# install using the repo requirements (the file is configured to prefer CPU PyTorch wheels)
+pip install -r requirements.txt
+```
+
+This repository's `requirements.txt` includes an extra index that points to PyTorch CPU wheels so pip will select CPU builds (e.g. `torch-*-cpu`). For CI or reproducible installs you can pin exact versions in `requirements.txt` (we provide pinned CPU builds by default in the file).
 
 ### Build
 
@@ -97,3 +112,4 @@ MIT License - see [LICENSE](LICENSE) file.
 
 **Made with ❤️ by the open-source community**
 
+# ttag-text-to-audio
