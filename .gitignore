@@ -51,12 +51,9 @@ generated/
 *.flac
 *.ogg
 
-# Model cache
+# Model cache (but keep source files)
 .cache/
 huggingface/
-models/
 
 # TypeScript
 *.tsbuildinfo
-
-dist/
